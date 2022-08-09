@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  watch: true,
   mode: 'development', //production
   entry: {
     main: path.resolve(__dirname, 'src/app.js'),
@@ -25,7 +26,7 @@ module.exports = {
       //css
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       //images
-      { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type: 'asset/resource' },
+      { test: /\.(svg|ico|png|webp|jpg|gif|webp|jpeg)$/, type: 'asset/resource' },
       //js for babel
       {
         test: /\.js$/,

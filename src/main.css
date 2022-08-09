@@ -5,35 +5,130 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 20px;
-  font-weight: 300;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-}
-body {
-  min-height: 100vh;
-  background-color: rgb(134, 13, 13);
-  color: rgb(238, 238, 238);
-}
-header,
-main,
-footer {
-  width: 80vw;
-  padding: 1rem 2rem;
+
+.container{
+  max-width: 1224px;
   margin: 0 auto;
 }
-header h1 {
-  color: rgb(0, 255, 0);
+
+.navbar {
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: olivedrab;
+
 }
-header h2 {
-  color: orangered;
+
+.navbar img {
+  width: 100px;
+  cursor: pointer;
 }
-p {
-  line-height: 1.7;
-  margin: 1.5rem 0;
+
+.ul-nav-header{
+  list-style-type: none;
+  display: flex;
+ 
 }
-img {
-  max-width: 50vw;
+
+.liheader button {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 2rem;
+  padding-left: 1rem;
+  border: none;
+  background: none
 }
+
+.liheader button:hover{
+  font-weight: 700;
+}
+
+.title{
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  font-weight: 700;
+}
+.strach {
+  padding: 2rem 1rem;
+
+  display: flex;
+  text-align: center; 
+  justify-content: center;
+}
+.container-main{
+  height: calc(100vh - (82px + 1rem));
+  background-color: rgb(188, 218, 161);
+  display: block;
+}
+
+
+.intro_info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  text-align: center; 
+  justify-content: center;
+}
+
+.intro_info--h2{
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  color: rgb(4, 46, 17);
+}
+
+.intro_info--p{
+  color: rgb(4, 46, 17);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container-menu{
+  height: calc(100vh - (82px + 1rem));
+  background-color: rgb(241, 209, 203);
+  display: none;
+}
+
+.menu-menu{
+display: grid;
+grid-template-columns: 250px 250px 250px;
+grid-template-rows: repeat(2, 1fr);
+justify-content: center;
+text-align: center;
+gap: 1rem;
+margin-top: 2rem;
+}
+
+.menu-pizza img {
+  width: 250px;
+}
+
+.container-geo{
+  height: calc(100vh - (82px + 1rem));
+  background-color: rgb(183, 210, 241);
+  display: none;
+}
+
+.geo-info--h1{
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 50%;
+  padding: 0 .5rem;
+  line-height: 2;
+}
+
+.geo-info {
+ align-items: center;
+ justify-content: center;
+}
+
